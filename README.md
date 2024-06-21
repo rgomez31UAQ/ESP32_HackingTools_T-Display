@@ -1,36 +1,35 @@
-# The Ultimate ESP32 Hacking Tool: Because sometimes you just need to be a little evil!
-### Looking to take down your neighbor's wifi network? Or just want to cause chaos at your local coffee shop? Or does your Boss pay you less than you deserve?
-Look no further, because we have the perfect tool for you: the ESP32 hacking tool!
+# The Ultimate ESP32 Hacking Tool: ¡Porque a veces sólo necesitas ser un poco malvado!
+### ¿Buscas tumbar la red wifi de tu vecino? ¿O simplemente quieres causar el caos en tu cafetería local? ¿O tu jefe te paga menos de lo que mereces?
+No busques más, porque tenemos la herramienta perfecta para ti: ¡la herramienta de hacking ESP32!
 
 ## Features
 ### CLI & Display version
-- **WiFi Beacon Spammer**: With our beacon spammer feature, you can flood the area with fake wifi signals and confuse the hell out of anyone trying to connect to a legitimate network.
-- **WiFi Deauther**: And when things get a little too boring, use our deauther function to disconnect someone from the internet in a flash. It's like a digital version of pulling the plug on their router. And no it is not a WiFi jammer, it is a deauther. Don't know the difference? just google script kiddie.
-- **Captive Portal**: Our captive portal feature allows you to redirect all incoming connections to a custom landing page, where you can collect login information. You can choose between a Google Login page and a McDonald's Free WiFi page. Why McDonald's? Because from now on you can earn McDonalds reward points as a fat but brave hacker for other people!
-- **Evil Twin**: Our Evil Twin attack creates a replica of another WiFi network which gets permanently deauthenticated as well, so you can't connect to the original network. If you now connect to the fake wifi, a fake router login page opens, telling you that the router password has expired. if you finally received the complex password of your 80-year-old neighbor, you can inform him that "0123456789" is not the safest password.
-- **WiFi Scanner**: Scan for nearby WiFi networks and their bssid, channels and signal strength.
-- **BLE Spoof**: Broke but want to flex with AirPods like a rich kid?? Fear not the ble spoof is the perfect flexing tool. Spoof Apple, Google, Samsung and Microsoft devices. (Some Apple Devices are even crashing)
-### CLI version only
+- Wifi Beacon Spammer**: Con nuestra función de spam de balizas, puedes inundar la zona con señales wifi falsas y confundir a cualquiera que intente conectarse a una red legítima.
+- WiFi Deauther**: Y cuando las cosas se pongan demasiado aburridas, utiliza nuestra función deautomatización para desconectar a alguien de Internet en un instante. Es como una versión digital de tirar del enchufe en su router. Y no, no es un bloqueador de WiFi, es un deauther. ¿No sabes la diferencia? sólo google script kiddie.
+- **Captive Portal**: Nuestra función de portal cautivo le permite redirigir todas las conexiones entrantes a una página de destino personalizada, donde puede recopilar información de inicio de sesión. Puede elegir entre una página de inicio de sesión de Google o una página de WiFi gratuito de McDonald's. ¿Por qué McDonald's? ¡Porque a partir de ahora puedes ganar puntos de recompensa McDonalds como un hacker gordo pero valiente para otras personas!
+- **Evil Twin**: Nuestro ataque Evil Twin crea una réplica de otra red WiFi que también se desautentica permanentemente, por lo que no puedes conectarte a la red original. Si ahora te conectas a la wifi falsa, se abre una página de inicio de sesión del router falsa, que te dice que la contraseña del router ha caducado. si finalmente recibes la contraseña compleja de tu vecino de 80 años, puedes informarle de que "0123456789" no es la contraseña más segura.
+- **WiFi Scanner**: Busca redes WiFi cercanas y su bssid, canales e intensidad de señal.
+- **BLE Spoof**: ¿Estás sin blanca pero quieres flexionar con los AirPods como un niño rico? No temas, la doble imitación es la herramienta de flexión perfecta. Spoof dispositivos de Apple, Google, Samsung y Microsoft. (Algunos dispositivos de Apple son incluso estrellarse)
+- ### CLI version only
 - **HTTP-Request**
 - **ModBus-Request**
 - **UPD-Request**
 - **ARP-Request**
 
 ## CLI (Terminal) version
-Experience an interface similar to a conventional Terminal.
-Your recent commands are stored and easily retrievable using the arrow keys and autocomplete can be achieved by pressing tab.
-### **IMPORTANT NOTE**: Ensure that your serial monitor is compatible with escape codes to guarantee accurate output display.
+Experimenta una interfaz similar a la de un Terminal convencional.
+Tus comandos recientes se almacenan y se recuperan fácilmente mediante las teclas de flecha, y puedes autocompletar pulsando tabulador.
+### **NOTA IMPORTANTE**: Asegúrese de que su monitor de serie es compatible con los códigos de escape para garantizar una visualización de salida precisa.
+Si eres usuario de Windows (mis condolencias 🥲). CMD no muestra la salida correctamente. Como alternativa, considere el uso de Putty o un programa similar.
+**Instrucciones para usuarios de Mac/Linux**:
+- Si ya tienes esp-idf instalado, simplemente usa idf.py monitor.
+- Si no, recomiendo usar cu:
+1. Determine el puerto serie introduciendo **`ls /dev/cu*`** en el terminal.
+2. Para abrir el monitor serie, escriba **`sudo cu -s 115200 -l <serial_port>`**.
+3. Para salir del monitor serie, teclee **`~.`**.
 
-If you are Windows user (my condolences 🥲). CMD not displays output correctly. As an alternative, consider using Putty or a similar program.
-**Instructions for Mac/Linux Users**:
-- If you have esp-idf already installed, simply use idf.py monitor.
-- If not, I recommend using cu:
-1. Determine the serial port by entering **`ls /dev/cu*`** in the terminal.
-2. To open the serial monitor, type **`sudo cu -s 115200 -l <serial_port>`**.
-3. To exit the serial monitor, type **`~.`**.
-
-**Instructions for Windows Users**:
-- First, download and install Putty.
+**Instrucciones para usuarios de Windows**:
+- En primer lugar, descarga e instala Putty.
 1. Identify your Serial COM Port in the device manager.
 2. In Putty, select 'Serial' as the connection type.
 3. Input your COM Port in the 'Serial line' field.
